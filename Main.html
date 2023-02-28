@@ -4,72 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Teko:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Curriculum Vitae</title>
 </head>
 <body>
-    <h1>Nombre Apellido</h1>
-    <h2>Descripción rápida (puesto actual/deseado)</h2>
-    <p>Extracto: Lorem iusmod tempor incididunt ut labore et dolore magna aliqua. Quisque egestas diam in arcu cursus euismod quis. Fermentum posuere urna nec tincidunt. Nunc consequat interdum varius sit. Sit amet aliquam id diam maecenas ultricies mi.</p>
-    <img src="foto.png" alt="description">
-    <ul>
-        <li>Mail</li>
-        <li>Dirección</li>
-        <li>Celular</li>
-    </ul>
-    <h3>Experiencia Laboral</h3>
-    <dl>
-        <dt>Último trabajo      FechaInicio1-FechaFin1</dt>
-        <dd>Definición 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque massa placerat duis ultricies lacus sed.</dd>
-        <dt>Trabajo 2       FechaInicio2-FechaFin2</dt>
-        <dd>Definición 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ornare lectus sit amet est placerat in egestas.</dd>
-    </dl>
-    <h3>Educación</h3>
-    <dl>
-        <dt>Último estudio      FechaInicioA-FechaFinA</dt>
-        <dd>Definición A: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
-        <dt>Estudio B       FechaInicioB-FechaFinB</dt>
-        <dd>Definición B: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
-    </dl>
-    <h3>Skills</h3>
-    <table>
-        <tbody>
-            <tr>
-                <td>Skill 1</td>
-                <td>Experto</td>
-            </tr>
-            <tr>
-                <td>Skill 2</td>
-                <td>Avanzado</td>
-            </tr>
-            <tr>
-                <td>Skill 3</td>
-                <td>Hábil</td>
-            </tr>
-            <tr>
-                <td>Skill 4</td>
-                <td>Principiante</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="Lateral">
+        <img src="foto.png" alt="description">
+        <h1>Nombre Apellido</h1>
+        <h2>Puesto actual</h2>
 
+        <ul>
+            <li>nombreapellido@gmail.com</li>
+            <li>provincia localidad</li>
+            <li>11 1234 5678</li>
+        </ul>
 
-    <h3>Idiomas</h3>
-    <table>
-        <tbody>
-            <tr>
-                <td>Español</td>
-                <td>Nativo</td>
-            </tr>
-            <tr>
-                <td>Inglés</td>
-                <td>Avanzado</td>
-            </tr>
-            <tr>
-                <td>Idioma 3</td>
-                <td>Principiante</td>
-            </tr>
-        </tbody>
-    </table>
+        <h4><a href="#SecciónResumen">Resumen</a></h4>
+        <h4><a href="#SecciónExperiencia">Experiencia</a></h4>
+        <h4><a href="#SecciónEducación">Educación</a></h4>
+        <h4><a href="#SecciónHabilidades">Habilidades</a></h4>
+        <h4><a href="#SecciónIdiomas">Idiomas</a></h4>
+    </div>
+    <div class="Principal">
+        <h3 id="SecciónResumen">Resumen</h3>
+        <p>Extracto: Lorem iusmod tempor incididunt ut labore et dolore magna aliqua. Quisque egestas diam in arcu cursus euismod quis. Fermentum posuere urna nec tincidunt. Nunc consequat interdum varius sit. Sit amet aliquam id diam maecenas ultricies mi.</p>
+        <p>Extracto: Lorem iusmod tempor incididunt ut labore et dolore magna aliqua. Quisque egestas diam in arcu cursus euismod quis. Fermentum posuere urna nec tincidunt. Nunc consequat interdum varius sit. Sit amet aliquam id diam maecenas ultricies mi.</p>
 
+        <h3 id="SecciónExperiencia">Experiencia Laboral</h3>
+        <dl>
+            <dt>Último trabajo<span class="Fecha">FechaInicio1-FechaFin1</span></dt>
+            <dd>Lugar1</dd>
+            <dd>Definición 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque massa placerat duis ultricies lacus sed.</dd>
+            <dt>Trabajo 2<span class="Fecha">FechaInicio2-FechaFin2</span></dt>
+            <dd>Lugar2</dd>
+            <dd>Definición 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ornare lectus sit amet est placerat in egestas.</dd>
+        </dl>
+
+        <h3 id="SecciónEducación">Educación</h3>
+        <dl>
+            <dt>Último estudio<span class="Fecha">FechaInicioA-FechaFinA</span></dt>
+            <dd>InstituciónA</dd>
+            <dd>Definición A: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
+            <dt>Estudio B<span class="Fecha">FechaInicioB-FechaFinB</span></dt>
+            <dd>InstituciónB</dd>
+            <dd>Definición B: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
+        </dl>
+
+        <h3 id="SecciónHabilidades">Habilidades</h3>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Skill 1</td>
+                    <td>Experto</td>
+                </tr>
+                <tr>
+                    <td>Skill 2</td>
+                    <td>Avanzado</td>
+                </tr>
+                <tr>
+                    <td>Skill 3</td>
+                    <td>Hábil</td>
+                </tr>
+                <tr>
+                    <td>Skill 4</td>
+                    <td>Principiante</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3 id="SecciónIdiomas">Idiomas</h3>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Español</td>
+                    <td>Nativo</td>
+                </tr>
+                <tr>
+                    <td>Inglés</td>
+                    <td>Avanzado</td>
+                </tr>
+                <tr>
+                    <td>Idioma 3</td>
+                    <td>Principiante</td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </div>
+  
 </body>
 </html> 
